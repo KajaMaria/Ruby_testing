@@ -25,7 +25,9 @@ class TestRomanNumbers < Test::Unit::TestCase
     assert_equal("VII", roman_number(7))
     assert_equal("VIII", roman_number(8))
   end
-  
+  def test_return_ix_when_9
+    assert_equal("IX", roman_number(9))
+  end
 end
 
 # assert_equal = checks if results are equal
